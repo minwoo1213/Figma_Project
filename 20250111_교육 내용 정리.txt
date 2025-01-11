@@ -1,0 +1,100 @@
+20250111 mwcha
+[URL: https://www.figma.com/design/RYcSBU27matECEARoTBlwv/firstproject-250111?m=auto&t=zKORUsUrbFTIIDsg-6]
+
+--------------------------------
+기본:
+
+UI: User Interface -> Server 와 User가 만나는 측'면' [Browser]
+> Design
+
+UX: User Experience -> 유저 관점의 경험
+> Product
+
+----------------------------------
+개념:
+
+* width: 너비 - 가로
+* height: 높이 - 세로
+
+* snap: 좌표계에 대한 거리를 드래그 시 자동으로 표기
+
+* fill: 색상 지정, 색상 정보는 Hex Code 기준, 16진수 하나만 입력 시 전부 채워짐
+(Hex: 16진수 | History: 웹 디자인 시 색상 조합은 컴퓨터 메모리 공간을 사용하기에 무한정으로 늘어나는 것을 방지하고자 최대 1mb로 약속 -> 색상의 값은 0 ~ 255로 정의: 1바이트, 256bit)
+(색의 3원색: Red, Green, Blue > 가산조합 - 색이 채워질수록 흰색, 빠질수록 검은색, 따라서 흰색은 Red 255, Green 255, Blue 255)
+-> FF0000: Red 255, Green 0, Blue 0 = 빨간색
+
+* Appearance: [Corner Radius = 모서리 각도]
+
+* Effects: 그림자 설정, 웹 좌표계 기준 [Spread: 반경]
+-> 꿀팁: 요즘 트렌드는 그림자를 위에서 준 작은 그림자를 자주 사용한다함 (포지션 0,0 블러 8 스프레드 0)
+
+*Plug-IN: 피그마 주요기능, 툴 바 액션에 있음
+
+* Layout: Clif content 설정 시 자식 레이어들이 부모에 상속
+
+* Feather Icons: 액션 탭에 있는 슬랙 이모지 같은 느낌
+
+* Flag: 우측 상단 탭에 있는데, 적용 시 flag 처리 함 (중요도가 높아지는 개념)
+
+* Resize to fit: 배경 레이어 자체를 자동으로 하위 레이어 크기에 맞춰줌
+
+-------------------------------------------------------------
+팁:
+
+* 남의 웹 사이트에서 폰트 가져오기
+> 원하는 웹 페이지에서 [CTRL + SHIFT + J] > Network 디깅 창 열어서 새로고침 혹은 원하는 폰트 클릭하면 네트워크 디깅 창에 나올거임, 그거 더블 클릭하면 다운로드됨
+(.woff 확장자: web open font format -> OTF [Open type font] 혹은 TTF [True type font] 로 확장자 변환이 필요함)
+
+i. 웹/앱 등의 디바이스를 통해서 작업: 웹 좌표계
+
+> 웹 좌표계 (XY 좌표의 0이 좌 상단 끝 지점에서 시작)
+> 데카르트 좌표계 (XY축으로 이루어진 일반적인 2차함수)
+
+ii. 웹 브라우저의 default font-size: 16px
+
+iii. 프론트 Default 폰트 - h4: 16px (h1: 32px ~ h6)
+
+iiii. 스타일 가이드
+> Fill > Aplly styles and variables > New > " /Color/#{색상코드} "
+: /Color 안에 " #999999 " 라는 이름의 정의된 색상을 저장
+
+iv. Layout Grid
+> 포토샵 자 처럼 격자를 표시함
+
+v. statcounter
+> 해상도 크기 어떻게 설정할지 디자이너가 보는 시장 자료
+[https://gs.statcounter.com/screen-resolution-stats]
+
+vi. Current variant
+> 변수 변경 시 무조건 우측에서 편집, 레이어 이름 바꾸는건 의미가 없음
+
+vii. Assets
+> 컴포넌트로 묶은 객체들을 설정할 때는 좌측의 Assets에서 insert 해서 기존 객체에 대체시키기
+
+--------------------------
+단축기:
+
+Auto Layout (레이아웃 맞춰주는 부분 - 제일 많이 사용 ***)
+> [SHIFT + A]
+> [ALT + SHIFT + A] #Delete Auto Layout
+
+프레임 그룹 설정 (일반 그룹보다 자주 사용 **)
+> [CTRL + ALT + G]
+
+일반 그룹 설정 (복수선택: SHIFT + 좌클릭)
+> [CTRL + G]
+
+하단바 프레임 (Frame)
+> [F]
+
+복제 (Dulicate)
+> 객체 선택 후, [ALT + SHIFT + 드래그]
+
+Plug-IN (툴바 액션에 위치, 클릭 후 plug-in, unsplash가 디자이너들이 쓰는 이미지 다운 앱)
+> [CTRL + K]
+
+텍스트
+> [T]
+
+Zoom In/Out (디자인 작업 후, 속성창 100% Publish)
+> [CTRL + 휠]
