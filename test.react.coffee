@@ -1,103 +1,108 @@
-<div style={{width: 1920, height: 4000, position: 'relative', background: 'black'}}>
-  <div style={{width: 1920, height: 996, left: 0, top: 0, position: 'absolute'}}>
-    <img style={{width: 1920, height: 996, left: 0, top: 0, position: 'absolute'}} src="https://via.placeholder.com/1920x996" />
-    <div style={{width: 1920, height: 996, left: 0, top: 0, position: 'absolute', background: 'linear-gradient(180deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.80) 50%, rgba(0, 0, 0, 0.60) 100%)'}} />
-    <div style={{left: 361, top: 956, position: 'absolute', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 20, display: 'inline-flex'}}>
-      <img style={{width: 78, height: 77}} src="https://via.placeholder.com/78x77" />
-      <div style={{width: 1100, height: 80, paddingLeft: 40, paddingRight: 40, background: 'linear-gradient(90deg, #261733 0%, #151A3F 100%)', borderRadius: 16, justifyContent: 'space-between', alignItems: 'center', display: 'flex'}}>
-        <div><span style="color: 'white', fontSize: 14, fontFamily: 'Inter', fontWeight: '500', wordWrap: 'break-word'">The Netflix you love for just $7.99.<br/></span><span style="color: 'white', fontSize: 16, fontFamily: 'Inter', fontWeight: '400', wordWrap: 'break-word'">Get our most affordable, ad-supported plan</span></div>
-        <div style={{paddingLeft: 16, paddingRight: 16, paddingTop: 10, paddingBottom: 10, background: '#808080', borderRadius: 4, justifyContent: 'center', alignItems: 'center', gap: 10, display: 'flex'}}>
-          <div style={{color: 'white', fontSize: 16, fontFamily: 'Inter', fontWeight: '400', wordWrap: 'break-word'}}>Learn More</div>
-        </div>
-      </div>
-    </div>
-    <div style={{height: 343, left: 637, top: 327, position: 'absolute', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: 36, display: 'inline-flex'}}>
-      <div style={{alignSelf: 'stretch', textAlign: 'center', color: 'white', fontSize: 62, fontFamily: 'Inter', fontWeight: '700', lineHeight: 80, wordWrap: 'break-word'}}>Unlimited movies, TV<br/>shows, and more</div>
-      <div style={{alignSelf: 'stretch', textAlign: 'center', color: 'white', fontSize: 18, fontFamily: 'Inter', fontWeight: '500', wordWrap: 'break-word'}}>Starts at $7.99. Cancel anytime.</div>
-      <div style={{alignSelf: 'stretch', height: 89, flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', gap: 8, display: 'flex'}}>
-        <div style={{alignSelf: 'stretch', textAlign: 'center', color: 'white', fontSize: 18, fontFamily: 'Inter', fontWeight: '500', wordWrap: 'break-word'}}>Ready to watch? Enter your email to create or restart your membership.</div>
-        <div style={{alignSelf: 'stretch', justifyContent: 'flex-start', alignItems: 'center', gap: 8, display: 'inline-flex'}}>
-          <div style={{width: 450, height: 59, padding: 16, background: 'rgba(22, 22, 22, 0.70)', borderRadius: 4, border: '1px rgba(128, 128, 128, 0.70) solid', justifyContent: 'flex-start', alignItems: 'center', gap: 6, display: 'flex'}}>
-            <div style={{color: 'white', fontSize: 16, fontFamily: 'Inter', fontWeight: '400', wordWrap: 'break-word'}}>Email address</div>
+// src/App.jsx
+import React from 'react';
+
+const App = () => {
+  return (
+    <div className="w-[1920px] h-[4000px] relative bg-black">
+      {/* Hero Section */}
+      <div className="w-[1920px] h-[996px] left-0 top-0 absolute">
+        <img className="w-full h-full absolute left-0 top-0" src="/hero-bg.jpg" alt="Hero background" />
+        <div className="w-full h-full absolute left-0 top-0 bg-gradient-to-b from-black/60 via-black/80 to-black/60" />
+        
+        {/* Promotional Banner */}
+        <div className="left-[361px] top-[956px] absolute flex items-start gap-5">
+          <img className="w-[78px] h-[77px]" src="/netflix-icon.png" alt="Netflix icon" />
+          <div className="w-[1100px] h-20 px-10 bg-gradient-to-r from-[#261733] to-[#151A3F] rounded-2xl flex justify-between items-center">
+            <div>
+              <span className="text-white text-sm font-medium font-inter">The Netflix you love for just $7.99.</span>
+              <br/>
+              <span className="text-white text-base font-normal font-inter">Get our most affordable, ad-supported plan</span>
+            </div>
+            <div className="px-4 py-2.5 bg-gray-500 rounded flex justify-center items-center gap-2.5">
+              <div className="text-white text-base font-normal">Learn More</div>
+            </div>
           </div>
-          <div style={{padding: 16, background: '#E50914', borderRadius: 4, justifyContent: 'center', alignItems: 'center', gap: 10, display: 'flex'}}>
-            <div style={{color: 'white', fontSize: 22, fontFamily: 'Inter', fontWeight: '400', wordWrap: 'break-word'}}>Get Started</div>
-            <div style={{width: 24, height: 24, position: 'relative'}}>
-              <div style={{width: 6, height: 12, left: 9, top: 6, position: 'absolute', border: '2px white solid'}}></div>
+        </div>
+
+        {/* Hero Content */}
+        <div className="h-[343px] left-[637px] top-[327px] absolute flex flex-col justify-center items-center gap-9">
+          <div className="text-center text-white text-[62px] font-bold font-inter leading-[80px]">
+            Unlimited movies, TV<br/>shows, and more
+          </div>
+          <div className="text-center text-white text-lg font-medium">
+            Starts at $7.99. Cancel anytime.
+          </div>
+          
+          {/* Email Signup */}
+          <div className="flex flex-col items-center gap-2">
+            <div className="text-center text-white text-lg font-medium">
+              Ready to watch? Enter your email to create or restart your membership.
+            </div>
+            <div className="flex items-center gap-2">
+              <input 
+                type="email" 
+                placeholder="Email address"
+                className="w-[450px] h-[59px] px-4 bg-[#161616]/70 rounded border border-gray-500/70 text-white"
+              />
+              <button className="px-4 py-4 bg-[#E50914] rounded flex items-center gap-2.5">
+                <span className="text-white text-[22px]">Get Started</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 6L15 12L9 18" stroke="white" strokeWidth="2"/>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div style={{height: 96, paddingLeft: 10, paddingRight: 10, paddingTop: 28, paddingBottom: 28, left: 0, top: 0, position: 'absolute', background: 'linear-gradient(180deg, black 0%, rgba(0, 0, 0, 0) 100%)', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: 10, display: 'inline-flex'}}>
-    <div style={{width: 1220, justifyContent: 'space-between', alignItems: 'center', display: 'inline-flex'}}>
-      <img style={{width: 148, height: 40}} src="https://via.placeholder.com/148x40" />
-      <div style={{justifyContent: 'flex-start', alignItems: 'center', gap: 12, display: 'flex'}}>
-        <div style={{width: 128, height: 31, paddingLeft: 10, paddingRight: 10, paddingTop: 6, paddingBottom: 6, borderRadius: 4, border: '1px rgba(128, 128, 128, 0.70) solid', justifyContent: 'flex-start', alignItems: 'center', gap: 6, display: 'flex'}}>
-          <div style={{width: 25, height: 25, position: 'relative'}}>
-            <div style={{width: 13.34, height: 14.46, left: 0.88, top: 1.77, position: 'absolute', background: 'white'}}></div>
-            <div style={{width: 10.40, height: 11.64, left: 13.40, top: 9.36, position: 'absolute', background: 'white'}}></div>
+
+      {/* Navigation */}
+      <div className="h-24 px-2.5 py-7 left-0 top-0 absolute bg-gradient-to-b from-black to-transparent">
+        <div className="w-[1220px] flex justify-between items-center">
+          <img className="w-[148px] h-10" src="/netflix-logo.png" alt="Netflix Logo" />
+          <div className="flex items-center gap-3">
+            <div className="w-32 h-[31px] px-2.5 py-1.5 rounded border border-gray-500/70 flex items-center gap-1.5">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill="white" d="M..."/>
+              </svg>
+              <span className="text-white text-base">English</span>
+            </div>
+            <button className="px-4 py-1.5 bg-[#E50914] rounded">
+              <span className="text-white text-base">Sign in</span>
+            </button>
           </div>
-          <div style={{color: 'white', fontSize: 16, fontFamily: 'Inter', fontWeight: '400', wordWrap: 'break-word'}}>English</div>
         </div>
-        <div style={{paddingLeft: 16, paddingRight: 16, paddingTop: 6, paddingBottom: 6, background: '#E50914', borderRadius: 4, justifyContent: 'center', alignItems: 'center', gap: 10, display: 'flex'}}>
-          <div style={{color: 'white', fontSize: 16, fontFamily: 'Inter', fontWeight: '400', wordWrap: 'break-word'}}>Sign in</div>
+      </div>
+
+      {/* Trending Section */}
+      <div className="h-[505px] pt-[62px] pb-[76px] px-[349px] left-0 top-[1033px] absolute flex flex-col gap-[30px]">
+        <h2 className="text-white text-[30px] font-bold">Trending Now</h2>
+        <div className="w-[1222px] h-[301px] flex gap-4">
+          {[1, 2, 3, 4, 5].map((num) => (
+            <div key={num} className="w-[214px] h-[301px] relative">
+              <img className="w-full h-full" src={`/movie-${num}.jpg`} alt={`Movie ${num}`} />
+              <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/80" />
+              <div className="absolute left-[15px] top-[213px] text-[#414141] text-[60px] font-bold">{num}</div>
+              <div className="absolute left-[63px] top-[247px] text-white text-xs">
+                <span className="font-bold">Vote</span> : <span className="italic">7,320</span> / 
+                <span className="font-bold">Rate</span> : <span className="italic">8.4 points</span><br/>
+                <span className="font-bold">Review</span> : <span className="italic">Good Movie~!!</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Bottom Section */}
+      <div className="w-[2092px] h-[1500px] left-[-399px] top-[1575px] absolute">
+        <img className="w-[2000px] h-[1500px] absolute left-0 top-0" src="/bottom-bg.jpg" alt="Bottom background" />
+        <div className="absolute left-[1396px] top-[598px]">
+          <span className="text-white text-[48px] font-bold">Chill, Cool, Classy<br/></span>
+          <br/>
+          <span className="text-white text-[40px]">Follow this account Right now.</span>
         </div>
       </div>
     </div>
-  </div>
-  <div style={{height: 505, paddingTop: 62, paddingBottom: 76, paddingLeft: 349, paddingRight: 349, left: 0, top: 1033, position: 'absolute', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 30, display: 'inline-flex'}}>
-    <div style={{color: 'white', fontSize: 30, fontFamily: 'Inter', fontWeight: '700', wordWrap: 'break-word'}}>Trending Now</div>
-    <div style={{width: 1222, height: 301, position: 'relative', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', display: 'flex'}}>
-      <div style={{width: 214, height: 301, position: 'relative'}}>
-        <div style={{width: 214, height: 301, left: 0, top: 0, position: 'absolute'}}>
-          <img style={{width: 214, height: 301, left: 0, top: 0, position: 'absolute'}} src="https://via.placeholder.com/214x301" />
-          <img style={{width: 214, height: 301, left: 0, top: 0, position: 'absolute'}} src="https://via.placeholder.com/214x301" />
-          <img style={{width: 214, height: 301, left: 0, top: 0, position: 'absolute'}} src="https://via.placeholder.com/214x301" />
-          <img style={{width: 214, height: 301, left: 0, top: 0, position: 'absolute'}} src="https://via.placeholder.com/214x301" />
-          <img style={{width: 214, height: 301, left: 0, top: 0, position: 'absolute'}} src="https://via.placeholder.com/214x301" />
-        </div>
-        <div style={{width: 214, height: 301, left: 0, top: 0, position: 'absolute', background: 'linear-gradient(180deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.40) 50%, rgba(0, 0, 0, 0.80) 100%)'}} />
-        <div style={{left: 15, top: 213, position: 'absolute', color: '#414141', fontSize: 60, fontFamily: 'Inter', fontWeight: '700', wordWrap: 'break-word'}}>1</div>
-        <div style={{left: 63, top: 247, position: 'absolute'}}><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontWeight: '700', wordWrap: 'break-word'">Vote</span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontWeight: '400', wordWrap: 'break-word'"> : </span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontStyle: 'italic', fontWeight: '400', wordWrap: 'break-word'">7,320</span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontWeight: '400', wordWrap: 'break-word'"> / </span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontWeight: '700', wordWrap: 'break-word'">Rate</span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontWeight: '400', wordWrap: 'break-word'"> : </span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontStyle: 'italic', fontWeight: '400', wordWrap: 'break-word'">8.4 points<br/></span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontWeight: '700', wordWrap: 'break-word'">Review</span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontWeight: '400', wordWrap: 'break-word'"> : </span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontStyle: 'italic', fontWeight: '400', wordWrap: 'break-word'">Good Movie~!!</span></div>
-      </div>
-      <div style={{width: 214, height: 301, position: 'relative'}}>
-        <div style={{width: 214, height: 301, left: 0, top: 0, position: 'absolute', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', display: 'inline-flex'}}>
-          <img style={{width: 214, height: 301}} src="https://via.placeholder.com/214x301" />
-        </div>
-        <div style={{width: 214, height: 301, left: 0, top: 0, position: 'absolute', background: 'linear-gradient(180deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.40) 50%, rgba(0, 0, 0, 0.20) 100%)'}} />
-        <div style={{left: 15, top: 213, position: 'absolute', color: '#414141', fontSize: 60, fontFamily: 'Inter', fontWeight: '700', wordWrap: 'break-word'}}>2</div>
-        <div style={{left: 63, top: 247, position: 'absolute'}}><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontWeight: '700', wordWrap: 'break-word'">Vote</span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontWeight: '400', wordWrap: 'break-word'"> : </span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontStyle: 'italic', fontWeight: '400', wordWrap: 'break-word'">7,320</span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontWeight: '400', wordWrap: 'break-word'"> / </span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontWeight: '700', wordWrap: 'break-word'">Rate</span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontWeight: '400', wordWrap: 'break-word'"> : </span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontStyle: 'italic', fontWeight: '400', wordWrap: 'break-word'">8.4 points<br/></span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontWeight: '700', wordWrap: 'break-word'">Review</span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontWeight: '400', wordWrap: 'break-word'"> : </span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontStyle: 'italic', fontWeight: '400', wordWrap: 'break-word'">Good Movie~!!</span></div>
-      </div>
-      <div style={{width: 214, height: 301, position: 'relative'}}>
-        <div style={{width: 214, height: 301, left: 0, top: 0, position: 'absolute', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', display: 'inline-flex'}}>
-          <img style={{width: 214, height: 301}} src="https://via.placeholder.com/214x301" />
-        </div>
-        <div style={{width: 214, height: 301, left: 0, top: 0, position: 'absolute', background: 'linear-gradient(180deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.40) 50%, rgba(0, 0, 0, 0.20) 100%)'}} />
-        <div style={{left: 15, top: 213, position: 'absolute', color: '#414141', fontSize: 60, fontFamily: 'Inter', fontWeight: '700', wordWrap: 'break-word'}}>3</div>
-        <div style={{left: 63, top: 247, position: 'absolute'}}><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontWeight: '700', wordWrap: 'break-word'">Vote</span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontWeight: '400', wordWrap: 'break-word'"> : </span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontStyle: 'italic', fontWeight: '400', wordWrap: 'break-word'">7,320</span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontWeight: '400', wordWrap: 'break-word'"> / </span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontWeight: '700', wordWrap: 'break-word'">Rate</span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontWeight: '400', wordWrap: 'break-word'"> : </span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontStyle: 'italic', fontWeight: '400', wordWrap: 'break-word'">8.4 points<br/></span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontWeight: '700', wordWrap: 'break-word'">Review</span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontWeight: '400', wordWrap: 'break-word'"> : </span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontStyle: 'italic', fontWeight: '400', wordWrap: 'break-word'">Good Movie~!!</span></div>
-      </div>
-      <div style={{width: 214, height: 301, position: 'relative'}}>
-        <div style={{width: 214, height: 301, left: 0, top: 0, position: 'absolute', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', display: 'inline-flex'}}>
-          <img style={{width: 214, height: 301}} src="https://via.placeholder.com/214x301" />
-        </div>
-        <div style={{width: 214, height: 301, left: 0, top: 0, position: 'absolute', background: 'linear-gradient(180deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.40) 50%, rgba(0, 0, 0, 0.20) 100%)'}} />
-        <div style={{left: 15, top: 213, position: 'absolute', color: '#414141', fontSize: 60, fontFamily: 'Inter', fontWeight: '700', wordWrap: 'break-word'}}>4</div>
-        <div style={{left: 63, top: 247, position: 'absolute'}}><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontWeight: '700', wordWrap: 'break-word'">Vote</span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontWeight: '400', wordWrap: 'break-word'"> : </span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontStyle: 'italic', fontWeight: '400', wordWrap: 'break-word'">7,320</span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontWeight: '400', wordWrap: 'break-word'"> / </span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontWeight: '700', wordWrap: 'break-word'">Rate</span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontWeight: '400', wordWrap: 'break-word'"> : </span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontStyle: 'italic', fontWeight: '400', wordWrap: 'break-word'">8.4 points<br/></span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontWeight: '700', wordWrap: 'break-word'">Review</span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontWeight: '400', wordWrap: 'break-word'"> : </span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontStyle: 'italic', fontWeight: '400', wordWrap: 'break-word'">Good Movie~!!</span></div>
-      </div>
-      <div style={{width: 214, height: 301, position: 'relative'}}>
-        <div style={{width: 214, height: 301, left: 0, top: 0, position: 'absolute', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', display: 'inline-flex'}}>
-          <img style={{width: 214, height: 301}} src="https://via.placeholder.com/214x301" />
-        </div>
-        <div style={{width: 214, height: 301, left: 0, top: 0, position: 'absolute', background: 'linear-gradient(180deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.40) 50%, rgba(0, 0, 0, 0.20) 100%)'}} />
-        <div style={{left: 15, top: 213, position: 'absolute', color: '#414141', fontSize: 60, fontFamily: 'Inter', fontWeight: '700', wordWrap: 'break-word'}}>5</div>
-        <div style={{left: 63, top: 247, position: 'absolute'}}><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontWeight: '700', wordWrap: 'break-word'">Vote</span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontWeight: '400', wordWrap: 'break-word'"> : </span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontStyle: 'italic', fontWeight: '400', wordWrap: 'break-word'">7,320</span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontWeight: '400', wordWrap: 'break-word'"> / </span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontWeight: '700', wordWrap: 'break-word'">Rate</span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontWeight: '400', wordWrap: 'break-word'"> : </span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontStyle: 'italic', fontWeight: '400', wordWrap: 'break-word'">8.4 points<br/></span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontWeight: '700', wordWrap: 'break-word'">Review</span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontWeight: '400', wordWrap: 'break-word'"> : </span><span style="color: 'white', fontSize: 10, fontFamily: 'Inter', fontStyle: 'italic', fontWeight: '400', wordWrap: 'break-word'">Good Movie~!!</span></div>
-      </div>
-    </div>
-  </div>
-  <div style={{width: 2092, height: 1500, left: -399, top: 1575, position: 'absolute'}}>
-    <img style={{width: 2000, height: 1500, left: 0, top: 0, position: 'absolute'}} src="https://via.placeholder.com/2000x1500" />
-    <div style={{left: 1396, top: 598, position: 'absolute'}}><span style="color: 'white', fontSize: 48, fontFamily: 'Inter', fontWeight: '700', wordWrap: 'break-word'">Chill, Cool, Classy<br/></span><span style="color: 'white', fontSize: 48, fontFamily: 'Inter', fontWeight: '400', wordWrap: 'break-word'"><br/></span><span style="color: 'white', fontSize: 40, fontFamily: 'Inter', fontWeight: '400', wordWrap: 'break-word'">Follow this account Right now.</span></div>
-  </div>
-</div>
+  );
+};
+
+export default App;
