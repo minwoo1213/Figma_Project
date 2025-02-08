@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: './', // Cloudflare Pages에서 경로 문제 해결
+  base: './',  // 이 부분을 추가
   build: {
     outDir: 'dist'
   }
