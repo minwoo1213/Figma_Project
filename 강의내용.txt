@@ -1,0 +1,124 @@
+*피그마 UIUX 모바일 웹&앱 디자인
+- 피그마 UI툴에 대한 학습
+- UX기획 어디서 어떻게 왜
+
+지금까지 학습했던 Figma툴을 활용해서 어떻게 생산적이고 효율적인 UI작업을 할 수 있는가에 대한 학습!!
+
+UX기획(안)을 대략적으로 만들어보는 시간!!
+
+1.Business Goal
+> 표면적인 목표 : 이익추구 = 돈을 벌자
+> 내면적인 목표 
+- 유입고객 증가 > 전환률 높아짐 (*구매)
+- 체류시간 증가 > 상품 및 정보 획득시간 높아짐
+- 재방문 기회 > 만족도 증가 & 충성고객 확보
+- 대표 & CEO & 임원
+- 매년 / 매분기 / 매월 세부적인 목표
+- OKR = Object Key Result
+- KPI = Key Performance Indicator
+
+2.문제인식
+- 취업용 포트폴리오 기획.제작
+
+- 어디서 부터 해야할지 모르겠다.
+- 어떤 주제를 선정해야할지 모르겠다.
+- 잘하고 있는 것인지 모르겠다.
+
+- 기승전결 => 일관성이 없는 기획(안)
+- 마지막까지 가지 못하는 경우 => 다시 시작
+
+> 구글 플레이스토어 > 기존 서비스운영 앱 // 경쟁업체
+> 스마트스토어 혹은 독립몰 혹은 쿠팡 등의 오픈마켓
+
+3.Target User (*소비자)
+> 우리 서비스 및 상품을 소비해줄 수 있는 고객 30대
+> 31살 39살
+
+- Segment (*그룹)
+> 1순위
+> 2순위
+> 3순위 (*지금당장은 우리의 파워 고객 x, 잠재적으로 주요 고객)
+
+- Persona (*주요 고객)
+> 매우 구체적으로 해당 타겟 유저를 구체적으로 묘사
+
+4.User Research
+
+> Desk Research
+- 네이버 포털사이트 : 2600만명 (*1일)
+- 네이버 데이터랩 : 기본 사용자 키워드 검색 패턴
+- 네이버 광고센터 : 사업자 // 개인
+
+- 대기업 연구랩 사이트
+- 공공데이터 포털 사이트
+
+> Field Research 
+- 현장 인터뷰
+- 현업 관계자 대상 설문조사
+
+- 양식 // 포맷
+- 포맷 => 네이버 폼 // 구글 폼
+- 네이버 폼 (*국내기업 서비스 // 메뉴얼 편의성)
+- 구글 폼 (*메뉴얼 불친절 // 구글 데이터 시트)
+
+- UX/UI 포트폴리오
+
+UI/UX - Project250215
+
+
+Font/34px
+Font/30px
+Font/50px
+
+Color/#000000
+Color/#FFDE03
+Color/#C5C5C5
+Color/#949494
+
+inner
+
+Title
+
+Subtitle
+
+Theme
+
+Desc
+
+Section - Business
+
+Section - Background
+
+Item01
+
+ItemList
+MainTitle
+
+Color/#0E1323
+BottomBg
+
+Color/#0E1638
+Color/#FFFFFF
+
+Question
+Section - UserResearch
+
+사진 // 
+- 아바타 이미지 (x)
+- 영화인물 > 정마담 // 
+- Color/#F5F5F5
+Profile
+Information
+
+Persona01
+PersonaList
+
+Section - Persona
+
+Btn - Email
+ID & PW
+
+
+02 Intro
+
+Shadow
