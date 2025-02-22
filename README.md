@@ -5,7 +5,7 @@
 
 ## 🌐 피그마 활용 웹 서버
 
-www.minwooexfp.shop # 서버 HW 구해지면 호스팅 예정!
+www.minwooexfp.shop #서버 HW 구해지면 호스팅 예정!
 
 ## 📅 스케줄
 
